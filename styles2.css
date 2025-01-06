@@ -5,8 +5,9 @@
 }
 
 body {
-    display: block;
+    display: flex;
     justify-content: center;
+    align-items: center;
     background: #271F4C ;
     background-size: cover;
     background-position: center;
@@ -18,6 +19,10 @@ body {
     display: flex;
     justify-content: center;
     align-self: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .selection button {
@@ -31,4 +36,27 @@ body {
     font-size: 24px;
     text-decoration: underline;
     color: #1E173B;
+}
+
+.wrapper {
+    display: block;
+    background: blue;
+    max-width: 70% ;
+    padding: 25px 50px;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.wrapper img {
+    width: 500px;
+    height: auto;
+    padding: 15px;
+}
+
+.wrapper img:hover {
+    width: 510px;
+    height: auto;
+    outline: solid 5px red;
+    transition: all 0.08s ease;
 }
