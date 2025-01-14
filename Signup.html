@@ -11,23 +11,26 @@
         <img id="logo" src="/img/logo.png" alt="">
         <h1>Signup</h1>
         
-        <form action="">
+        <form id="signup-form">
             <p>Username</p>
             <div class="inputbox">
-                <input type="text" placeholder="|" required>
+                <input type="text" id="signup-name" placeholder="|" required>
             </div>
 
             <p>Email</p>
             <div class="inputbox">
-                <input type="text" placeholder="|" required>
+                <input type="email" id="signup-email" placeholder="|" required>
             </div>
             
             <p>Password</p>
             <div class="inputbox">
-                <input type="password" placeholder="|" required>
-            </div> 
+                <input type="password" id="signup-password" placeholder="|" required>
+            </div>
+
+            <div id="signup-error" class="error-message" style="display: none; color: red;"></div>
+
+            <button type="button" id="signup-btn" class="btn">Signup</button>
         </form>
-        <button type="submit" class="btn">Signup</button>
     </div>
     <script src="script.js"></script>
 </body>
