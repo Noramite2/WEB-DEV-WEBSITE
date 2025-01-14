@@ -38,7 +38,7 @@ body {
     color: #1E173B;
 }
 
-.wrapper {
+.imgGallery {
     display: block;
     background: blue;
     max-width: 70% ;
@@ -48,13 +48,13 @@ body {
     text-align: center;
 }
 
-.wrapper img {
+.imgGallery img {
     width: 500px;
     height: auto;
     padding: 15px;
 }
 
-.wrapper img:hover {
+.imgGallery img:hover {
     width: 510px;
     height: auto;
     outline: solid 5px red;
