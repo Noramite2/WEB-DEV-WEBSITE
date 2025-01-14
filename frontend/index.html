@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <img id="logo" src="/img/logo.png" alt="">
+        <h1>Photo Bank</h1>
+        
+        <form id="login-form">
+            <p>Username</p>
+            <div class="inputbox">
+                <input type="text" id="login-email" placeholder="| Email" required>
+            </div>
+            
+            <p>Password</p>
+            <div class="inputbox">
+                <input type="password" id="login-password" placeholder="| Password" required>
+            </div> 
+            
+            <div id="login-error" class="error-message" style="display: none; color: red;"></div>
+            
+            <button type="button" id="login-btn" class="btn">Login</button>
+        </form>
+        <div class="signup">
+            <p>Don't have an account? <a href="Signup.html">Sign up</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
