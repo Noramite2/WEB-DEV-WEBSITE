@@ -14,7 +14,7 @@ body {
 }
 
 .selection {
-    background: #ffffffcc;
+    background: #ffffff86;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
@@ -40,7 +40,7 @@ body {
 
 .imgGallery {
     display: block;
-    background: blue;
+    background: #2d2359;
     max-width: 70% ;
     padding: 25px 50px;
     margin-top: 50px;
@@ -57,6 +57,42 @@ body {
 .imgGallery img:hover {
     width: 510px;
     height: auto;
-    outline: solid 5px red;
+    outline: solid 5px rgb(201, 252, 189);
     transition: all 0.08s ease;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .selection {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .selection button {
+        width: 100px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .imgGallery {
+        max-width: 90%;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .imgGallery img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        padding: 10px;
+    }
+
+    .imgGallery img:hover {
+        max-width: 310px;
+        outline: solid 3px rgb(201, 252, 189);
+    }
 }
